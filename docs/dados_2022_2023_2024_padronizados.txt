@@ -1,0 +1,51 @@
+Ano ingresso	        Ano ingresso	            Ano ingresso		    ano_ingresso
+Ano nasc	            Data de Nasc	            Data de Nasc		    ano_nasc
+Atingiu PV	            Atingiu PV	                Atingiu PV		        atingiu_pv
+Avaliador1	            Avaliador1	                Avaliador1		        avaliador1
+Avaliador2	            Avaliador2	                Avaliador2		        avaliador2
+Avaliador3	            Avaliador3	                Avaliador3		        avaliador3
+Avaliador4	            Avaliador4	                Avaliador4		        avaliador4
+Cf	                    Cf	                        Cf		                cf
+Cg	                    Cg	                        Cg		                cg
+Ct	                    Ct	                        Ct		                ct
+Defas	                Defasagem	                Defasagem		        defasagem
+Destaque IDA	        Destaque IDA	            Destaque IDA		    destaque_ida
+Destaque IEG	        Destaque IEG	            Destaque IEG		    destaque_ieg
+Destaque IPV	        Destaque IPV	            Destaque IPV		    destaque_ipv
+Fase	                Fase	                    Fase		            fase
+Fase ideal	            Fase Ideal	                Fase Ideal		        fase_ideal
+Gênero	                Gênero	                    Gênero		            genero
+IAA	                    IAA	                        IAA		                iaa
+IAN	                    IAN	                        IAN		                ian
+IDA	                    IDA	                        IDA		                ida
+Idade 22	            Idade	                    Idade		            idade
+IEG	                    IEG	                        IEG		                ieg
+INDE 22	                INDE 22	                    INDE 22		            inde_22
+Indicado	            Indicado	                Indicado		        indicado
+Inglês	                Ing	                        Ing		                ingles
+Instituição de ensino	Instituição de ensino	    Instituição de ensino   instituicao_de_ensino
+IPS	                    IPS	                        IPS		                ips
+IPV	                    IPV	                        IPV		                ipv
+Matem	                Mat	                        Mat		                matematica
+Nº Av	                Nº Av	                    Nº Av		            n_av
+Nome	                Nome Anonimizado	        Nome Anonimizado		nome
+Pedra 20	            Pedra 20	                Pedra 20		        pedra_20
+Pedra 21	            Pedra 21	                Pedra 21		        pedra_21
+Pedra 22	            Pedra 22	                Pedra 22		        pedra_22
+Portug	                Por	                        Por		                portugues
+RA	                    RA	                        RA		                ra
+Rec Av1	                Rec Av1	                    Rec Av1		            rec_av1
+Rec Av2	                Rec Av2	                    Rec Av2		            rec_av2
+Rec Av3	                Rec Av3	                    Rec Av3		            rec_av3
+Rec Av4	                Rec Av4	                    Rec Av4		            rec_av4
+Rec Psicologia	        Rec Psicologia	            Rec Psicologia		    rec_psicologia
+Turma	                Turma	                    Turma		            turma
+	                    Pedra 2023	                Pedra 23		        pedra_23
+	                    INDE 2023	                INDE 23		            inde_23
+		                                            Ativo/ Inativo		    ativo_inativo
+		                                            Avaliador5		        avaliador5
+		                                            Avaliador6		        avaliador6
+		                                            Escola		            escola
+		                                            INDE 2024		        inde_24
+		                                            Pedra 24		        pedra_24
+	                    IPP	                        IPP		                ipp

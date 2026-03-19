@@ -1,0 +1,160 @@
+{
+  "pergunta": 9,
+  "titulo": "Modelo Preditivo de Risco de Defasagem",
+  "dataset": {
+    "n_total": 314,
+    "n_defasado": 224,
+    "n_adequado": 90,
+    "pct_defasado": 71.3
+  },
+  "n_features": 18,
+  "features": [
+    "IAN_2020",
+    "IDA_2020",
+    "IEG_2020",
+    "IAA_2020",
+    "IPS_2020",
+    "IPP_2020",
+    "IAN_2021",
+    "IDA_2021",
+    "IEG_2021",
+    "IAA_2021",
+    "IPS_2021",
+    "IPP_2021",
+    "DELTA_IAN",
+    "DELTA_IDA",
+    "DELTA_IEG",
+    "DELTA_IAA",
+    "DELTA_IPS",
+    "DELTA_IPP"
+  ],
+  "resultados_modelos": {
+    "Logistic Regression": {
+      "auc_cv": 0.8018,
+      "f1_cv": 0.8399,
+      "auc_test": 0.9074,
+      "f1_test": 0.8889
+    },
+    "Random Forest": {
+      "auc_cv": 0.8095,
+      "f1_cv": 0.8738,
+      "auc_test": 0.866,
+      "f1_test": 0.8791
+    },
+    "XGBoost": {
+      "auc_cv": 0.7845,
+      "f1_cv": 0.8632,
+      "auc_test": 0.8272,
+      "f1_test": 0.8791
+    }
+  },
+  "coeficientes_lr": {
+    "IPS_2020": 0.236,
+    "DELTA_IAA": 0.1335,
+    "IPS_2021": 0.0865,
+    "DELTA_IEG": 0.0595,
+    "IAA_2021": -0.0001,
+    "IEG_2021": -0.0208,
+    "IDA_2020": -0.0629,
+    "DELTA_IAN": -0.0659,
+    "DELTA_IPP": -0.0836,
+    "IEG_2020": -0.1157,
+    "DELTA_IPS": -0.157,
+    "DELTA_IDA": -0.1848,
+    "IAA_2020": -0.2746,
+    "IDA_2021": -0.2988,
+    "IPP_2020": -0.303,
+    "IAN_2020": -0.5523,
+    "IAN_2021": -0.6369,
+    "IPP_2021": -0.6708
+  },
+  "feature_importance_rf": {
+    "IDA_2021": 0.1358,
+    "IAN_2021": 0.0957,
+    "IEG_2020": 0.0764,
+    "DELTA_IDA": 0.0732,
+    "IPP_2021": 0.0715,
+    "DELTA_IPP": 0.0632,
+    "IPP_2020": 0.0559,
+    "IAN_2020": 0.0557,
+    "DELTA_IEG": 0.054,
+    "IEG_2021": 0.0519
+  },
+  "matriz_confusao": [
+    [
+      13,
+      5
+    ],
+    [
+      5,
+      40
+    ]
+  ],
+  "demo_perfis": {
+    "Aluno A (alto risco)": {
+      "probabilidade": 99.7,
+      "nivel": "ALTO",
+      "recomendacoes": [
+        {
+          "indicador": "IPP_2021",
+          "contribuicao": 2.195,
+          "recomendacao": "Avaliacao psicopedagogica critica — encaminhar para suporte pedagogico especializado"
+        },
+        {
+          "indicador": "IAN_2020",
+          "contribuicao": 0.538,
+          "recomendacao": "Defasagem preexistente na entrada — plano de recuperacao desde o primeiro ciclo"
+        },
+        {
+          "indicador": "IAN_2021",
+          "contribuicao": 0.486,
+          "recomendacao": "Defasagem curricular persistente — plano de nivelamento por disciplina"
+        }
+      ]
+    },
+    "Aluno B (risco medio)": {
+      "probabilidade": 97.2,
+      "nivel": "ALTO",
+      "recomendacoes": [
+        {
+          "indicador": "IPP_2021",
+          "contribuicao": 0.805,
+          "recomendacao": "Avaliacao psicopedagogica critica — encaminhar para suporte pedagogico especializado"
+        },
+        {
+          "indicador": "IAN_2020",
+          "contribuicao": 0.538,
+          "recomendacao": "Defasagem preexistente na entrada — plano de recuperacao desde o primeiro ciclo"
+        },
+        {
+          "indicador": "IAN_2021",
+          "contribuicao": 0.486,
+          "recomendacao": "Defasagem curricular persistente — plano de nivelamento por disciplina"
+        }
+      ]
+    },
+    "Aluno C (baixo risco)": {
+      "probabilidade": 21.2,
+      "nivel": "BAIXO",
+      "recomendacoes": [
+        {
+          "indicador": "IPS_2020",
+          "contribuicao": 0.124,
+          "recomendacao": "Contexto psicossocial fragilizado em 2020 — suporte familiar e acompanhamento psicologico"
+        },
+        {
+          "indicador": "IPS_2021",
+          "contribuicao": 0.071,
+          "recomendacao": "Condicoes psicossociais adversas — acionar rede de suporte familiar"
+        },
+        {
+          "indicador": "IAA_2020",
+          "contribuicao": 0.059,
+          "recomendacao": "Autoconceito muito baixo — trabalhar autoestima e protagonismo"
+        }
+      ]
+    }
+  },
+  "modelo_selecionado": "Logistic Regression",
+  "justificativa": "Melhor AUC no holdout e coeficientes interpretaveis para recomendacoes"
+}

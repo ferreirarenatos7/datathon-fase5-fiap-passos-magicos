@@ -1,0 +1,155 @@
+# Datathon POSTECH DTAT — Passos Mágicos
+
+**Aluna:** Ana Raquel
+**Curso:** POSTECH Data Analytics — Fase 5
+**Programa analisado:** [Passos Mágicos](https://passosmagicos.org.br) — ONG que apoia o desenvolvimento educacional de crianças e jovens em situação de vulnerabilidade social (Embu-Guaçu, SP)
+
+---
+
+## Objetivo
+
+Analisar os dados educacionais do programa Passos Mágicos (2020–2022) para responder 11 perguntas de pesquisa, construir um modelo preditivo de risco de defasagem curricular e propor um sistema de recomendações de intervenção preventiva.
+
+---
+
+## Estrutura do Repositório
+
+```
+├── app.py                          # Streamlit app (raiz — deploy)
+├── modelo_risco.pkl                # Modelo treinado (LR + RF + scaler)
+├── requirements.txt
+│
+├── notebooks/
+│   └── DATATHON-ANALISE.ipynb      # Notebook principal — análise completa (P1–P11)
+│
+├── src/                            # Scripts de análise
+│   ├── p8_inde.py
+│   ├── p9_modelo.py
+│   ├── p10_efetividade.py
+│   ├── p11_insights.py
+│   ├── gerar_md.py
+│   └── validacao_estatistica.py
+│
+├── outputs/                        # JSONs gerados pelos scripts
+│   └── output_p*.json
+│
+├── figures/                        # Figuras geradas (gitignored)
+│   └── fig_*.png
+│
+├── docs/                           # Documentação
+│   ├── ANALISE_CONSOLIDADA.md
+│   └── NOTAS_VALIDACAO.md
+│
+└── data/                           # Gitignored — dados de terceiros
+    └── PEDE_PASSOS_DATASET_FIAP.csv
+```
+
+---
+
+## Dataset
+
+**Fonte:** `PEDE_PASSOS_DATASET_FIAP.csv`
+**Registros:** 1.349 alunos × 69 colunas
+**Período:** 2020, 2021 e 2022 (colunas sufixadas por ano)
+**Separador:** ponto e vírgula (`;`)
+
+**Indicadores principais:**
+
+| Indicador | Descrição |
+|-----------|-----------|
+| IAN | Adequação de Nível (alinhamento curricular) |
+| IDA | Desempenho Acadêmico |
+| IEG | Engajamento |
+| IAA | Autoavaliação |
+| IPS | Aspectos Psicossociais |
+| IPP | Aspectos Psicopedagógicos |
+| IPV | Ponto de Virada |
+| **INDE** | Índice de Desenvolvimento Educacional (composto) |
+| PEDRA | Fase do aluno: Quartzo < Ágata < Ametista < Topázio |
+
+---
+
+## Como Rodar
+
+```bash
+# 1. Criar e ativar ambiente virtual
+python -m venv .venv
+source .venv/Scripts/activate   # Git Bash / WSL
+# .venv\Scripts\activate        # Windows CMD
+
+# 2. Instalar dependências
+pip install -r requirements.txt
+
+# 3. Rodar o Streamlit app
+streamlit run app.py
+
+# 4. Ou abrir o notebook
+jupyter notebook DATATHON-ANALISE.ipynb
+
+# 4. Abrir o notebook
+jupyter notebook notebooks/DATATHON-ANALISE.ipynb
+
+# 5. Regenerar JSONs e figuras (rodar de dentro de src/)
+cd src
+python p8_inde.py && python p9_modelo.py && python p10_efetividade.py && python p11_insights.py && python gerar_md.py
+```
+
+---
+
+## Modelo Preditivo (Pergunta 9)
+
+**Problema:** prever se um aluno terá defasagem curricular em 2022 (`IAN_2022 < 10`) usando indicadores de 2020 e 2021.
+
+**Features:** 18 (6 indicadores × 2 anos + 6 deltas de evolução)
+**Split:** 80% treino estratificado / 20% holdout
+**Validação:** 5-fold Stratified Cross-Validation
+
+| Modelo | AUC-CV | F1-CV | AUC-Holdout | F1-Holdout |
+|--------|--------|-------|-------------|------------|
+| **Logistic Regression** | 0.802 | 0.840 | **0.907** | **0.889** |
+| Random Forest | 0.809 | 0.874 | 0.866 | 0.879 |
+| XGBoost | 0.784 | 0.863 | 0.827 | 0.879 |
+
+**Modelo em produção:** Logistic Regression (melhor AUC holdout + interpretabilidade via coeficientes).
+
+> ⚠️ **Limitação:** coorte longitudinal de apenas 314 alunos (~23% da base). Modelo é um indicador de direção para intervenção preventiva.
+
+---
+
+## Principais Achados
+
+- **INDE discrimina Pedras** com altíssima significância estatística (Kruskal-Wallis H=777, p≈0)
+- **IDA** é o indicador mais correlacionado com INDE (Spearman r=0.74–0.82 nos 3 anos)
+- **INDE** caiu em 2021 (7.296→6.888) e recuperou parcialmente em 2022 (7.028) — não houve crescimento consistente
+- **Vetores reais de indicação para bolsa:** IPP (+0.987) e IDA (+0.944), não IEG (8º lugar, +0.218)
+- **ANOS_PM** não tem correlação significativa com INDE (Spearman r=−0.075, p=0.176)
+- **61.4%** dos indicados para bolsa vêm de escola privada
+
+Veja `NOTAS_VALIDACAO.md` para documentação completa do processo de validação.
+
+---
+
+## Streamlit App
+
+O app permite inserir os indicadores de um aluno (2020 e 2021) e obter:
+- Probabilidade de defasagem em 2022 (gauge visual)
+- Nível de risco: BAIXO / MÉDIO / ALTO
+- Radar chart do perfil do aluno
+- Evolução por indicador (deltas)
+- Recomendações de intervenção priorizadas
+
+**Deploy:** [streamlit.io](https://share.streamlit.io) *(link após deploy)*
+
+---
+
+## Validação Estatística
+
+Processo de validação independente em 5 etapas (`validacao_estatistica.py`):
+
+1. Integridade da base (cobertura, NaN, valores inválidos)
+2. Estatísticas descritivas por indicador (média, mediana, skewness, normalidade)
+3. Correlações Spearman com p-valores
+4. Investigações específicas (IPP, IPS, ANOS_PM)
+5. Verificações de coerência entre hipóteses e dados
+
+Nenhum indicador segue distribuição normal (Shapiro-Wilk p<0.05 em todos) — justificando o uso de testes não-paramétricos em todas as análises.

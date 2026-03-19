@@ -1,0 +1,152 @@
+{
+  "pergunta": 8,
+  "titulo": "Multidimensionalidade do INDE",
+  "n_corr_2022": 862,
+  "corr_indicadores_inde": {
+    "IAN": [
+      0.2859,
+      0.3134,
+      0.3947
+    ],
+    "IDA": [
+      0.8017,
+      0.8527,
+      0.8207
+    ],
+    "IEG": [
+      0.7476,
+      0.8716,
+      0.8053
+    ],
+    "IAA": [
+      0.4286,
+      0.5258,
+      0.4634
+    ],
+    "IPS": [
+      0.3943,
+      0.3073,
+      0.2742
+    ],
+    "IPP": [
+      0.1343,
+      0.5545,
+      0.2852
+    ],
+    "IPV": [
+      0.2929,
+      0.858,
+      0.7916
+    ]
+  },
+  "corr_matrix_2022": {
+    "IAN": {
+      "IAN": 1.0,
+      "IDA": 0.1481,
+      "IEG": 0.1639,
+      "IAA": 0.0489,
+      "IPS": 0.0359,
+      "IPP": 0.1207,
+      "IPV": 0.1135,
+      "INDE": 0.3947
+    },
+    "IDA": {
+      "IAN": 0.1481,
+      "IDA": 1.0,
+      "IEG": 0.5701,
+      "IAA": 0.218,
+      "IPS": 0.1371,
+      "IPP": 0.1169,
+      "IPV": 0.6222,
+      "INDE": 0.8207
+    },
+    "IEG": {
+      "IAN": 0.1639,
+      "IDA": 0.5701,
+      "IEG": 1.0,
+      "IAA": 0.3307,
+      "IPS": 0.0985,
+      "IPP": 0.1361,
+      "IPV": 0.5953,
+      "INDE": 0.8053
+    },
+    "IAA": {
+      "IAN": 0.0489,
+      "IDA": 0.218,
+      "IEG": 0.3307,
+      "IAA": 1.0,
+      "IPS": 0.1188,
+      "IPP": -0.1061,
+      "IPV": 0.264,
+      "INDE": 0.4634
+    },
+    "IPS": {
+      "IAN": 0.0359,
+      "IDA": 0.1371,
+      "IEG": 0.0985,
+      "IAA": 0.1188,
+      "IPS": 1.0,
+      "IPP": 0.0586,
+      "IPV": 0.2118,
+      "INDE": 0.2742
+    },
+    "IPP": {
+      "IAN": 0.1207,
+      "IDA": 0.1169,
+      "IEG": 0.1361,
+      "IAA": -0.1061,
+      "IPS": 0.0586,
+      "IPP": 1.0,
+      "IPV": 0.3375,
+      "INDE": 0.2852
+    },
+    "IPV": {
+      "IAN": 0.1135,
+      "IDA": 0.6222,
+      "IEG": 0.5953,
+      "IAA": 0.264,
+      "IPS": 0.2118,
+      "IPP": 0.3375,
+      "IPV": 1.0,
+      "INDE": 0.7916
+    },
+    "INDE": {
+      "IAN": 0.3947,
+      "IDA": 0.8207,
+      "IEG": 0.8053,
+      "IAA": 0.4634,
+      "IPS": 0.2742,
+      "IPP": 0.2852,
+      "IPV": 0.7916,
+      "INDE": 1.0
+    }
+  },
+  "inde_por_pedra_2022": {
+    "Quartzo": {
+      "media": 5.219,
+      "mediana": 5.395,
+      "n": 134
+    },
+    "Ágata": {
+      "media": 6.606,
+      "mediana": 6.657,
+      "n": 250
+    },
+    "Ametista": {
+      "media": 7.528,
+      "mediana": 7.509,
+      "n": 348
+    },
+    "Topázio": {
+      "media": 8.366,
+      "mediana": 8.274,
+      "n": 130
+    }
+  },
+  "conclusoes": {
+    "H1_maior_peso": "IDA e IEG (maiores correlacoes com INDE nos tres anos)",
+    "H2_estabilidade": "Sim — ranking dos indicadores consistente em 2020, 2021 e 2022",
+    "H3_redundancia": "Parcial — IDA e IEG correlacionados entre si; IAN mais independente",
+    "H4_discrimina_pedras": "Sim — INDE medio aumenta monotonicamente de Quartzo para Topazio"
+  }
+}

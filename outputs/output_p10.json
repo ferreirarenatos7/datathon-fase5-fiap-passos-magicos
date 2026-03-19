@@ -1,0 +1,91 @@
+{
+  "pergunta": 10,
+  "titulo": "Efetividade do Programa",
+  "inde_geral_por_ano": {
+    "2020": {
+      "media": 7.2961,
+      "n": 727
+    },
+    "2021": {
+      "media": 6.888,
+      "n": 684
+    },
+    "2022": {
+      "media": 7.0283,
+      "n": 862
+    }
+  },
+  "progressao_pedra": {
+    "n_total": 327,
+    "progrediu": 50,
+    "pct_progrediu": 15.3,
+    "manteve": 136,
+    "pct_manteve": 41.6,
+    "regrediu": 141,
+    "pct_regrediu": 43.1
+  },
+  "inde_por_pedra_ano": {
+    "Quartzo": {
+      "2020": {
+        "media": 5.27,
+        "n": 128
+      },
+      "2021": {
+        "media": 4.526,
+        "n": 110
+      },
+      "2022": {
+        "media": 5.219,
+        "n": 134
+      }
+    },
+    "Ágata": {
+      "2020": {
+        "media": 6.767,
+        "n": 171
+      },
+      "2021": {
+        "media": 6.281,
+        "n": 178
+      },
+      "2022": {
+        "media": 6.606,
+        "n": 250
+      }
+    },
+    "Ametista": {
+      "2020": {
+        "media": 7.913,
+        "n": 336
+      },
+      "2021": {
+        "media": 7.537,
+        "n": 295
+      },
+      "2022": {
+        "media": 7.528,
+        "n": 348
+      }
+    },
+    "Topázio": {
+      "2020": {
+        "media": 8.843,
+        "n": 92
+      },
+      "2021": {
+        "media": 8.634,
+        "n": 101
+      },
+      "2022": {
+        "media": 8.366,
+        "n": 130
+      }
+    }
+  },
+  "conclusoes": {
+    "INDE_geral": "INDE cai de 7.296 (2020) para 6.888 (2021) e recupera parcialmente para 7.028 (2022), sem atingir o nivel de 2020 — padrao de queda e recuperacao parcial, nao crescimento consistente",
+    "progressao": "Maioria dos alunos progrediu ou manteve a Pedra",
+    "limitacao": "Apenas alunos presentes nos 3 anos (n=327, ~23% da base)",
+    "alerta_metodologico": "Tres alertas: (1) populacoes diferentes a cada ano — comparacao de medias e entre coortes distintas; (2) IDA e IPP mudam de metodologia em 2022, o que pode artificialmente deprimir ou elevar indicadores; (3) regressao de Pedra pode refletir revisao de criterios classificatorios, nao queda real"
+  }
+}

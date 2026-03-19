@@ -1,0 +1,29 @@
+# Dataset — dados de terceiros, não versionar
+data/
+PEDE_PASSOS_DATASET_FIAP.xlsx
+Base de dados - Passos Mágicos.zip
+
+# Ambiente virtual
+.venv/
+
+# Figuras geradas (reproduced by scripts)
+figures/
+
+# Screenshots de sessão
+Captura de tela*.png
+
+# Scripts auxiliares de sessão (não fazem parte do entregável)
+run_p1_p7.py
+update_p9_notebook.py
+corrigir_conclusoes.py
+reorganizar.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

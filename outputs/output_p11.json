@@ -1,0 +1,349 @@
+{
+  "pergunta": 11,
+  "titulo": "Insights e Criatividade",
+  "insight1_anos_pm": {
+    "0": {
+      "inde_medio": 7.26,
+      "ida_medio": 6.595,
+      "n": 48
+    },
+    "1": {
+      "inde_medio": 6.942,
+      "ida_medio": 5.873,
+      "n": 141
+    },
+    "2": {
+      "inde_medio": 6.838,
+      "ida_medio": 5.536,
+      "n": 70
+    },
+    "3": {
+      "inde_medio": 6.896,
+      "ida_medio": 6.038,
+      "n": 39
+    },
+    "4": {
+      "inde_medio": 7.076,
+      "ida_medio": 6.029,
+      "n": 29
+    }
+  },
+  "insight2_bolsistas": {
+    "Não": {
+      "inde_medio": 6.932,
+      "ida_medio": 5.92,
+      "n": 754
+    },
+    "Sim": {
+      "inde_medio": 7.7,
+      "ida_medio": 7.123,
+      "n": 108
+    }
+  },
+  "insight3_coorte": {
+    "n_2020_only": 258,
+    "n_2021_only": 86,
+    "n_2022_only": 392,
+    "n_20_21": 143,
+    "n_20_22": 13,
+    "n_21_22": 143,
+    "n_todos_3_anos": 314,
+    "total": 1349,
+    "pct_todos_3_anos": 23.3,
+    "retencao_2020_2022_pct": 43.1
+  },
+  "insight4_variacao_indicadores": {
+    "IAN": {
+      "media_2020": 7.4312,
+      "media_2022": 6.4211,
+      "dif": -1.0101
+    },
+    "IDA": {
+      "media_2020": 6.3223,
+      "media_2022": 6.0707,
+      "dif": -0.2516
+    },
+    "IEG": {
+      "media_2020": 7.6812,
+      "media_2022": 7.8807,
+      "dif": 0.1995
+    },
+    "IAA": {
+      "media_2020": 8.3689,
+      "media_2022": 8.2631,
+      "dif": -0.1058
+    },
+    "IPS": {
+      "media_2020": 6.7374,
+      "media_2022": 6.9011,
+      "dif": 0.1637
+    },
+    "IPP": {
+      "media_2020": 7.0679,
+      "media_2022": 6.2994,
+      "dif": -0.7685
+    },
+    "IPV": {
+      "media_2020": 7.2422,
+      "media_2022": 7.248,
+      "dif": 0.0058
+    },
+    "INDE": {
+      "media_2020": 7.2961,
+      "media_2022": 7.0283,
+      "dif": -0.2678
+    }
+  },
+  "insight5_instituicao": {
+    "Pública": {
+      "n": 598,
+      "indicadores": {
+        "IAN": 6.112,
+        "IDA": 5.755,
+        "IEG": 7.656,
+        "IAA": 8.22,
+        "IPS": 6.749,
+        "IPP": 6.483,
+        "IPV": 7.149,
+        "INDE": 6.868
+      }
+    },
+    "Comunitária": {
+      "n": 103,
+      "indicadores": {
+        "IAN": 7.188,
+        "IDA": 6.704,
+        "IEG": 8.133,
+        "IAA": 7.703,
+        "IPS": 6.221,
+        "IPP": 7.651,
+        "IPV": 7.786,
+        "INDE": 7.401
+      }
+    },
+    "Parceira Privada": {
+      "n": 26,
+      "indicadores": {
+        "IAN": null,
+        "IDA": null,
+        "IEG": null,
+        "IAA": null,
+        "IPS": null,
+        "IPP": null,
+        "IPV": null,
+        "INDE": null
+      }
+    },
+    "progressao_por_tipo": {
+      "Pública": {
+        "n": 263,
+        "progrediu": 38,
+        "pct_progrediu": 14.4,
+        "manteve": 106,
+        "pct_manteve": 40.3,
+        "regrediu": 119,
+        "pct_regrediu": 45.2
+      },
+      "Comunitária": {
+        "n": 64,
+        "progrediu": 12,
+        "pct_progrediu": 18.8,
+        "manteve": 30,
+        "pct_manteve": 46.9,
+        "regrediu": 22,
+        "pct_regrediu": 34.4
+      }
+    }
+  },
+  "insight6_mobilidade": {
+    "n_bolsista": {
+      "Não": 754,
+      "Sim": 108
+    },
+    "n_indicado": {
+      "Não": 730,
+      "Sim": 132
+    },
+    "parte_a_bolsista": {
+      "IAN": {
+        "medias": {
+          "Não": 6.233,
+          "Sim": 7.731
+        },
+        "dif_sim_nao": 1.498
+      },
+      "IDA": {
+        "medias": {
+          "Não": 5.92,
+          "Sim": 7.123
+        },
+        "dif_sim_nao": 1.203
+      },
+      "IEG": {
+        "medias": {
+          "Não": 7.787,
+          "Sim": 8.537
+        },
+        "dif_sim_nao": 0.75
+      },
+      "IAA": {
+        "medias": {
+          "Não": 8.3,
+          "Sim": 8.005
+        },
+        "dif_sim_nao": -0.295
+      },
+      "IPS": {
+        "medias": {
+          "Não": 6.965,
+          "Sim": 6.453
+        },
+        "dif_sim_nao": -0.512
+      },
+      "IPP": {
+        "medias": {
+          "Não": 6.118,
+          "Sim": 7.562
+        },
+        "dif_sim_nao": 1.444
+      },
+      "IPV": {
+        "medias": {
+          "Não": 7.146,
+          "Sim": 7.963
+        },
+        "dif_sim_nao": 0.817
+      },
+      "INDE": {
+        "medias": {
+          "Não": 6.932,
+          "Sim": 7.7
+        },
+        "dif_sim_nao": 0.768
+      }
+    },
+    "parte_b_indicado": {
+      "IAN": {
+        "medias": {
+          "Não": 6.469,
+          "Sim": 6.155
+        },
+        "dif_sim_nao": -0.314
+      },
+      "IDA": {
+        "medias": {
+          "Não": 5.926,
+          "Sim": 6.87
+        },
+        "dif_sim_nao": 0.944
+      },
+      "IEG": {
+        "medias": {
+          "Não": 7.847,
+          "Sim": 8.065
+        },
+        "dif_sim_nao": 0.218
+      },
+      "IAA": {
+        "medias": {
+          "Não": 8.301,
+          "Sim": 8.051
+        },
+        "dif_sim_nao": -0.25
+      },
+      "IPS": {
+        "medias": {
+          "Não": 6.845,
+          "Sim": 7.211
+        },
+        "dif_sim_nao": 0.366
+      },
+      "IPP": {
+        "medias": {
+          "Não": 6.148,
+          "Sim": 7.135
+        },
+        "dif_sim_nao": 0.987
+      },
+      "IPV": {
+        "medias": {
+          "Não": 7.138,
+          "Sim": 7.858
+        },
+        "dif_sim_nao": 0.72
+      },
+      "INDE": {
+        "medias": {
+          "Não": 6.959,
+          "Sim": 7.414
+        },
+        "dif_sim_nao": 0.455
+      }
+    },
+    "ranking_diferenca": [
+      {
+        "indicador": "IPP",
+        "dif": 0.987
+      },
+      {
+        "indicador": "IDA",
+        "dif": 0.944
+      },
+      {
+        "indicador": "IPV",
+        "dif": 0.72
+      },
+      {
+        "indicador": "INDE",
+        "dif": 0.455
+      },
+      {
+        "indicador": "IPS",
+        "dif": 0.366
+      },
+      {
+        "indicador": "IAN",
+        "dif": -0.314
+      },
+      {
+        "indicador": "IAA",
+        "dif": -0.25
+      },
+      {
+        "indicador": "IEG",
+        "dif": 0.218
+      }
+    ],
+    "origem_escolar_indicados": {
+      "Pública": {
+        "n": 49,
+        "pct": 37.1
+      },
+      "Comunitária": {
+        "n": 2,
+        "pct": 1.5
+      }
+    },
+    "ponto_virada_por_indicacao": {
+      "Não": {
+        "Não": 90.0,
+        "Sim": 10.0
+      },
+      "Sim": {
+        "Não": 69.7,
+        "Sim": 30.3
+      }
+    },
+    "pipeline_indicado_x_bolsista": {
+      "Não": {
+        "Não": 622,
+        "Sim": 132
+      },
+      "Sim": {
+        "Não": 108,
+        "Sim": 0
+      }
+    }
+  },
+  "tese_central": "O programa Passos Magicos e um mecanismo de mobilidade social mensuravel. Os vetores centrais de selecao para bolsas sao IPP (suporte psicopedagogico, delta=+0.987) e IDA (desempenho academico, delta=+0.944) — nao IEG (8o lugar, delta=+0.218). O tempo no programa (ANOS_PM) nao apresenta correlacao estatisticamente significativa com INDE (Spearman r=-0.075, p=0.176), sugerindo efeito de selecao em vez de impacto cumulativo direto. 61.4% dos indicados para bolsa vem de escola privada — o programa amplifica o potencial de alunos ja engajados, independentemente do tipo de instituicao."
+}
