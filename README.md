@@ -1,6 +1,6 @@
 # Datathon POSTECH DTAT — Passos Mágicos
 
-**Aluna:** Ana Raquel
+**Aluno:** Renato Ferreira — RM 384836
 **Curso:** POSTECH Data Analytics — Fase 5
 **Programa analisado:** [Passos Mágicos](https://passosmagicos.org.br) — ONG que apoia o desenvolvimento educacional de crianças e jovens em situação de vulnerabilidade social (Embu-Guaçu, SP)
 
@@ -83,9 +83,6 @@ pip install -r requirements.txt
 # 3. Rodar o Streamlit app
 streamlit run app.py
 
-# 4. Ou abrir o notebook
-jupyter notebook DATATHON-ANALISE.ipynb
-
 # 4. Abrir o notebook
 jupyter notebook notebooks/DATATHON-ANALISE.ipynb
 
@@ -138,7 +135,7 @@ O app permite inserir os indicadores de um aluno (2020 e 2021) e obter:
 - Evolução por indicador (deltas)
 - Recomendações de intervenção priorizadas
 
-**Deploy:** [streamlit.io](https://share.streamlit.io) *(link após deploy)*
+**Deploy:** [https://datathon-fase5-fiap-paapps-magicos-d5bwxdafu6dtfp2gjfj4gr.streamlit.app](https://datathon-fase5-fiap-paapps-magicos-d5bwxdafu6dtfp2gjfj4gr.streamlit.app)
 
 ---
 
