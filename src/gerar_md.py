@@ -164,7 +164,7 @@ if p11:
         w(f"| 2020 + 2022 | {c['n_20_22']} |")
         w(f"| 2021 + 2022 | {c['n_21_22']} |")
         w(f"| Todos 3 anos | {c['n_todos_3_anos']} ({c['pct_todos_3_anos']}%) |")
-        w(f"\n**Retenção 2020→2022:** {c['retencao_2020_2022_pct']}% dos alunos de 2020 continuaram até 2022.\n")
+        w(f"\n**Retenção 2020→2022:** {c['retencao_2020_2022_pct']}% dos alunas de 2020 continuaram até 2022.\n")
 
     # Insight 4
     w('### Insight 4 — Variação dos Indicadores 2020 vs 2022\n')

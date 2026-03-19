@@ -57,11 +57,11 @@ Comparação direta entre anos retornaria 0 matches. **Não afeta nossas anális
 | Rede Decisão/União | Rede Decisão |
 | UNISA, Einstein, Estácio, FIAP, V202 | *(ausentes)* |
 
-Não existe `INSTITUICAO_ENSINO_ALUNO_2022`. Rastrear aluno por instituição entre anos retornaria falsos negativos. A análise de escola pública foi feita corretamente usando apenas o campo de 2022 (`INSTITUICAO_ENSINO_ALUNO_2020` como proxy para origem escolar dos indicados).
+Não existe `INSTITUICAO_ENSINO_ALUNO_2022`. Rastrear aluna por instituição entre anos retornaria falsos negativos. A análise de escola pública foi feita corretamente usando apenas o campo de 2022 (`INSTITUICAO_ENSINO_ALUNO_2020` como proxy para origem escolar dos indicados).
 
 ### Categoria C — Estrutura diferente em 2022 (methodologia expandida)
 
-- `NOTA_ING_2022`: apenas **285 de 860 alunos** têm nota de inglês (vs 860 com Port e Mat). Alunos de ALFA/Fase 1 não têm inglês — `IDA_2022` para eles é calculado com 2 notas em vez de 3. Já embutido no campo pré-calculado da base.
+- `NOTA_ING_2022`: apenas **285 de 860 alunas** têm nota de inglês (vs 860 com Port e Mat). Alunos de ALFA/Fase 1 não têm inglês — `IDA_2022` para eles é calculado com 2 notas em vez de 3. Já embutido no campo pré-calculado da base.
 - Coluna `REC_EQUIPE_N_2021` renomeada para `REC_AVA_N_2022` — mesmo conteúdo, nome diferente.
 - 2022 tem 30 colunas vs 18 em 2020 (expansão da metodologia, não erro).
 
@@ -85,12 +85,12 @@ Não existe `INSTITUICAO_ENSINO_ALUNO_2022`. Rastrear aluno por instituição en
 | 2021 | 686 | 49.1% |
 | 2022 | 862 | 36.1% |
 
-**Achado:** O padrão de NaN é **estrutural** (ausência = aluno não matriculado naquele ano), não aleatório.
+**Achado:** O padrão de NaN é **estrutural** (ausência = aluna não matriculado naquele ano), não aleatório.
 Todos os indicadores têm a mesma taxa de NaN por ano, o que confirma que o missing reflete
 a coorte transversal de cada período — não falha de coleta.
 
 **Implicação:** Comparações de médias entre anos refletem **populações diferentes** a cada ano.
-Apenas 314 alunos (~23% da base) têm dados nos 3 anos. Análises longitudinais devem ser
+Apenas 314 alunas (~23% da base) têm dados nos 3 anos. Análises longitudinais devem ser
 explicitamente rotuladas como "coorte restrita".
 
 **Achado adicional — 2022 tem metodologia diferente:**
@@ -149,7 +149,7 @@ seguido de IEG (r ≈ 0.59–0.74) e IPP (r ≈ 0.59–0.62).
 ### Divergência 1 — Tese central: IEG não é o principal diferenciador para INDICADO_BOLSA
 
 **Hipótese original:** IEG seria o principal vetor de resultado e o principal diferenciador
-dos alunos indicados para bolsa.
+dos alunas indicados para bolsa.
 
 **Dado validado (ranking de diferença Indicado Sim − Não):**
 
@@ -179,7 +179,7 @@ dos alunos indicados para bolsa.
 - Spearman r = −0.075, p = 0.176 → **não significativo**
 - INDE por grupo: 0 anos=7.26, 1 ano=6.94, 2 anos=6.84, 3 anos=6.90, 4 anos=7.08
 
-A relação não é monotônica positiva. Provavelmente há **efeito de seleção**: alunos que entram
+A relação não é monotônica positiva. Provavelmente há **efeito de seleção**: alunas que entram
 recentemente podem já ter perfil de maior desempenho relativo ao ano em que ingressam.
 
 **Conclusão:** O claim "cada ano adicional está associado a melhora mensurável" **não é
@@ -189,7 +189,7 @@ estatisticamente sustentado** (p = 0.176).
 
 ### Divergência 3 — Escola pública não é o principal grupo de indicados para bolsa
 
-**Hipótese original:** alunos de escola pública constituiriam o principal grupo candidato a bolsas.
+**Hipótese original:** alunas de escola pública constituiriam o principal grupo candidato a bolsas.
 
 **Dado validado (origem escolar dos indicados):**
 

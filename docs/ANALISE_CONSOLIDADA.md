@@ -1,5 +1,5 @@
 # Análise Consolidada — Datathon Passos Mágicos
-**Gerado em:** 2026-03-18  |  **Aluna:** Ana Raquel  |  **Curso:** POSTECH DTAT
+**Gerado em:** 2026-03-19  |  **Aluna:** Ana Raquel  |  **Curso:** POSTECH DTAT
 
 ---
 
@@ -169,7 +169,7 @@
 | 2021 + 2022 | 143 |
 | Todos 3 anos | 314 (23.3%) |
 
-**Retenção 2020→2022:** 43.1% dos alunos de 2020 continuaram até 2022.
+**Retenção 2020→2022:** 43.1% dos alunas de 2020 continuaram até 2022.
 
 ### Insight 4 — Variação dos Indicadores 2020 vs 2022
 
@@ -258,4 +258,4 @@
 
 ---
 
-*Gerado automaticamente por `gerar_md.py` em 2026-03-18*
+*Gerado automaticamente por `gerar_md.py` em 2026-03-19*

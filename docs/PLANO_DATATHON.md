@@ -24,11 +24,11 @@
 
 Foram avaliados os seguintes arquivos disponiveis:
 
-1. `PEDE_PASSOS_DATASET_FIAP.csv` — Dataset pre-processado com todos os indicadores calculados (IAN, IDA, IEG, IAA, IPS, IPP, IPV, INDE) para os anos 2020, 2021 e 2022. 1.349 registros de alunos. Unico arquivo que contem os indicadores especificos exigidos pelas 11 perguntas do datathon.
+1. `PEDE_PASSOS_DATASET_FIAP.csv` — Dataset pre-processado com todos os indicadores calculados (IAN, IDA, IEG, IAA, IPS, IPP, IPV, INDE) para os anos 2020, 2021 e 2022. 1.349 registros de alunas. Unico arquivo que contem os indicadores especificos exigidos pelas 11 perguntas do datathon.
 
 2. `PEDE_PASSOS_DATASET_FIAP.xlsx` — Copia identica ao CSV, apenas em formato diferente. Descartado por redundancia.
 
-3. `Base de dados - Passos Magicos.zip` — Banco de dados relacional bruto com multiplas tabelas (alunos, notas, frequencia, turmas, professores). Contem dados ate junho de 2024, porem sem os indicadores calculados. Exigiria joins complexos entre tabelas para chegar nos mesmos indicadores. Disponivel como fonte auxiliar caso necessario.
+3. `Base de dados - Passos Magicos.zip` — Banco de dados relacional bruto com multiplas tabelas (alunas, notas, frequencia, turmas, professores). Contem dados ate junho de 2024, porem sem os indicadores calculados. Exigiria joins complexos entre tabelas para chegar nos mesmos indicadores. Disponivel como fonte auxiliar caso necessario.
 
 4. `dados_2022_2023_2024_padronizados.txt` — Dicionario de padronizacao de colunas indicando que existiriam dados de 2023 e 2024 (inde_23, pedra_23, inde_24, pedra_24), porem esses dados nao estao disponiveis em nenhum dos arquivos fornecidos com os indicadores calculados.
 
@@ -59,10 +59,10 @@ Foram avaliados os seguintes arquivos disponiveis:
 ## Fase 2 — Análises (11 Perguntas)
 
 ### Pergunta 1 — Adequação do Nível (IAN)
-> Qual é o perfil geral de defasagem dos alunos e como ele evolui ao longo do ano?
+> Qual é o perfil geral de defasagem dos alunas e como ele evolui ao longo do ano?
 
 - [ ] Distribuição do IAN por ano
-- [ ] Percentual de alunos moderada/severamente defasados
+- [ ] Percentual de alunas moderada/severamente defasados
 - [ ] Evolução do IAN entre 2020, 2021 e 2022
 
 ---
@@ -90,7 +90,7 @@ Foram avaliados os seguintes arquivos disponiveis:
 
 - [ ] Scatter IAA x IDA
 - [ ] Scatter IAA x IEG
-- [ ] Análise de discrepância (alunos que se superestimam / subestimam)
+- [ ] Análise de discrepância (alunas que se superestimam / subestimam)
 
 ---
 
@@ -114,7 +114,7 @@ Foram avaliados os seguintes arquivos disponiveis:
 > Quais comportamentos mais influenciam o IPV?
 
 - [ ] Correlação de IDA, IEG, IPS, IAA com IPV
-- [ ] Perfil de alunos que atingiram Ponto de Virada = Sim
+- [ ] Perfil de alunas que atingiram Ponto de Virada = Sim
 
 ---
 
@@ -142,7 +142,7 @@ Foram avaliados os seguintes arquivos disponiveis:
 > Os indicadores mostram melhora consistente nas fases ao longo do ciclo?
 
 - [ ] Evolução por Pedra (Quartzo → Topázio) entre 2020 e 2022
-- [ ] Taxa de progressão de pedra por aluno
+- [ ] Taxa de progressão de pedra por aluna
 - [ ] Comparativo geral do programa ao longo dos anos
 
 ---
@@ -151,17 +151,17 @@ Foram avaliados os seguintes arquivos disponiveis:
 > Insights adicionais além das perguntas.
 
 - [ ] Impacto do tempo no programa (ANOS_PM) no desempenho
-- [ ] Perfil de alunos bolsistas vs. não bolsistas
-- [ ] Taxa de evasão (alunos presentes em 2020 mas não em 2022)
+- [ ] Perfil de alunas bolsistas vs. não bolsistas
+- [ ] Taxa de evasão (alunas presentes em 2020 mas não em 2022)
 - [ ] Outros insights identificados durante a análise
 
 ---
 
 ## Fase 3 — App Streamlit
 
-- [ ] Interface para inserir indicadores de um aluno
+- [ ] Interface para inserir indicadores de um aluna
 - [ ] Retornar probabilidade de risco de defasagem
-- [ ] Visualizações dos indicadores do aluno
+- [ ] Visualizações dos indicadores do aluna
 - [ ] Deploy no Streamlit Community Cloud
 
 ---

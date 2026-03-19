@@ -139,14 +139,29 @@ O app permite inserir os indicadores de um aluno (2020 e 2021) e obter:
 
 ---
 
+## Rigor Analítico — Hipóteses Testadas e Corrigidas
+
+A análise incluiu uma etapa de **validação estatística independente** que precedeu a redação das conclusões. O processo identificou **4 divergências materiais** entre as hipóteses iniciais e os dados:
+
+| # | Hipótese inicial | O que os dados mostraram |
+|---|-----------------|--------------------------|
+| 1 | IEG seria o principal diferenciador para bolsas | IEG é o **último** (8º lugar). IPP (+0,987) e IDA (+0,944) lideram |
+| 2 | Mais anos no programa → maior INDE | Spearman r = −0,075, **p = 0,176** — não significativo |
+| 3 | Escola pública = principal grupo de indicados | **61,4% dos indicados** vêm de escola privada |
+| 4 | INDE cresceu consistentemente 2020–2022 | Queda em 2021 (7,296→6,888), recuperação parcial em 2022 (7,028) |
+
+Todas as conclusões foram corrigidas antes da versão final. Documentação completa em [`docs/NOTAS_VALIDACAO.md`](docs/NOTAS_VALIDACAO.md).
+
+---
+
 ## Validação Estatística
 
-Processo de validação independente em 5 etapas (`validacao_estatistica.py`):
+Processo de validação independente em 5 etapas (`src/validacao_estatistica.py`):
 
-1. Integridade da base (cobertura, NaN, valores inválidos)
+1. Integridade da base — cobertura, NaN estrutural, valores inválidos (D9XX, #NULO!)
 2. Estatísticas descritivas por indicador (média, mediana, skewness, normalidade)
-3. Correlações Spearman com p-valores
-4. Investigações específicas (IPP, IPS, ANOS_PM)
-5. Verificações de coerência entre hipóteses e dados
+3. Correlações Spearman com p-valores explícitos
+4. Investigações específicas (IPP, IPS, ANOS_PM, escola pública)
+5. Verificações de coerência entre hipóteses narrativas e dados
 
-Nenhum indicador segue distribuição normal (Shapiro-Wilk p<0.05 em todos) — justificando o uso de testes não-paramétricos em todas as análises.
+Nenhum indicador segue distribuição normal (Shapiro-Wilk p < 0,05 em todos) — justificando o uso de **testes não-paramétricos** (Spearman, Kruskal-Wallis) em todas as análises.
