@@ -1,6 +1,6 @@
 # Datathon POSTECH DTAT — Passos Mágicos
 
-**Aluno:** Renato Ferreira — RM 384836
+**Aluno:** Renato Ferreira
 **Curso:** POSTECH Data Analytics — Fase 5
 **Programa analisado:** [Passos Mágicos](https://passosmagicos.org.br) — ONG que apoia o desenvolvimento educacional de crianças e jovens em situação de vulnerabilidade social (Embu-Guaçu, SP)
 
